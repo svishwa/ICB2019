@@ -104,7 +104,7 @@ font-weight: bold;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .example {background: red;}
-	#myVideo { bottom: 78%;}
+	#myVideo { top:0;}
 	.container{
 		padding-top: 24%;
 		    z-index: -1;
@@ -112,7 +112,7 @@ font-weight: bold;
     .titleBlock {
  	margin:0 auto;
     position: fixed;
-    bottom: 78%;
+    top: 2%;
     right: 30%;
     left:25%;
     width:50%;
@@ -135,7 +135,7 @@ font-weight: bold;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .example {background: green;}
-	#myVideo { bottom: 72%;}
+	#myVideo { top:0;}
 	.container{
 		padding-top: 17%;
 		    z-index: -1;
@@ -143,13 +143,40 @@ font-weight: bold;
     .titleBlock {
  	margin:0 auto;
     position: fixed;
-    bottom: 72%;
+    top: 2%;
     right: 30%;
     left:25%;
     width:50%;
 }
 	#title>h1{
-	font-size:40px;
+	font-size:30px;
+	#color:black !important;
+	#font-weight: bold;
+	}
+
+	#title>p{
+	font-size:16px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {background: blue;}
+	#myVideo { top:0;}
+	.container{
+		padding-top: 17%;
+		    z-index: -1;
+		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 7%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+	#title>h1{
+	font-size:44px;
 	#color:black !important;
 	#font-weight: bold;
 	}
@@ -157,12 +184,12 @@ font-weight: bold;
 	#title>p{
 	font-size:18px;
 	}
-}
+} 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .example {background: blue;}
-	#myVideo { bottom: 68%;}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+	#myVideo { top:0;}
 	.container{
 		padding-top: 17%;
 		    z-index: -1;
@@ -170,34 +197,7 @@ font-weight: bold;
     .titleBlock {
  	margin:0 auto;
     position: fixed;
-    bottom: 66%;
-    right: 30%;
-    left:25%;
-    width:50%;
-}
-	#title>h1{
-	font-size:48px;
-	#color:black !important;
-	#font-weight: bold;
-	}
-
-	#title>p{
-	font-size:22px;
-	}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .example {background: orange;}
-	#myVideo { bottom: 59%;}
-	.container{
-		padding-top: 15%;
-		    z-index: -1;
-		}
-    .titleBlock {
- 	margin:0 auto;
-    position: fixed;
-    bottom: 68%;
+    top: 7%;
     right: 30%;
     left:25%;
     width:50%;
@@ -216,15 +216,15 @@ font-weight: bold;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .example {background: pink;}
-	#myVideo { bottom: 57%;}
+	#myVideo { top:0;}
     .container{
-		padding-top: 15%;
+		padding-top: 16%;
 		    z-index: -1;
 		}
     .titleBlock {
  	margin:0 auto;
     position: fixed;
-    bottom: 70%;
+    top: 9%;
     right: 30%;
     left:25%;
     width:50%;
