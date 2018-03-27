@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICB 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+  <style>
+
+/**/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+	//background-image : url("papers4.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	//background-repeat: no-repeat;
+    background-attachment: fixed;
+	height:100%;
+	color: #595a5b;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 54%;
+    min-width: 100%; 
+    min-height: auto;
+	width:100%;
+	z-index: 1;
+}
+
+.titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    //bottom: 67%;
+    //right: 30%;
+    //left:25%;
+    //background: rgba(0, 0, 0, 0.1);
+   //background: transparent;
+    color: #f1f1f1;
+    //width:50%;
+    z-index: 1;
+
+}
+
+#title>h1{
+font-size:48px;
+#color:black !important;
+#font-weight: bold;
+}
+
+#title>p{
+font-size:22px;
+}
+
+
+#myBtn {
+    width: 20px;
+    font-size: 12px;
+    border: none;
+    /*background: #000;*/
+	background:none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+	    border: none;
+
+}
+
+/**/
+.navbar{
+background-color:transparent; //#f2f2f2; 
+border-color:transparent;
+color: white !important;//#595a5b !important;
+font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>li>a{
+color: white !important ; //#595a5b !important;
+font-size:18px;
+font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+color: white !important;//#595a5b !important;
+font-weight: bold;
+}
+
+/**/
+
+@media (min-width: 1200px) {
+        .container{
+		padding-top: 11%;
+		    z-index: -1;
+		}
+		 .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 70%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+}
+@media (min-width: 992px) {
+        .container{
+		padding-top: 11%;
+		    z-index: -1;
+		}
+		 .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 70%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+}
+@media (min-width: 768px) {
+    .container{
+		padding-top: 11%;
+		    z-index: -1;
+		}
+		 .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 70%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+}
+@media (min-width: 600px) {
+    .container{
+		padding-top: 13%;
+		    z-index: -1;
+		}
+	.titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 67%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+}
+@media (max-width: 600px) {
+    .container{
+		padding-top: 11%;
+		    z-index: -1;
+		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 67%;
+    right: 30%;
+    left:25%;
+    width:50%;
+}
+}
+
+
+#intro-bg{
+//background-color: #d9d9d9;
+//background-color: #f2f2f2;
+//opacity: 0.8;
+color:#000099 ; //#595a5b;
+text-align:justify;
+
+}
+
+
+	.panel-transparent {
+			background: none;
+		}
+
+	.panel-transparent .panel-header{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		padding-bottoms: 10px;
+
+    }
+	
+    .panel-transparent .panel-body{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		
+    }
+
+
+	.panel-default {
+		border: none;
+		z-index: -1;
+	}
+
+h4{
+font-weight: bold;
+color:#595a5b;
+
+}
+
+#datesBlock{
+height: 280px;
+overflow-y:auto;
+background-color: transparent;
+color:#595a5b;
+}
+
+#newsBlock{
+height: 280px;
+overflow-y:auto;
+
+}
+
+#newsBlock li>h6{
+font-weight: bold;
+}
+
+#newsList
+{
+text-align:left;
+//background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+#impDates{
+text-align: left;
+width: 100%;
+//background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+#impDates tr:nth-child(odd){
+//background-color: #f2f2f2;
+}
+
+#impDates tr:hover {
+background-color: #d9d9d9;
+color:black;
+}
+
+
+#impDates td, #impDates th {
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+#impDates th{
+    //background-color: #4CAF50;
+    color:#595a5b;
+}
+
+
+.well{
+background-color: transparent;
+border:none;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+
+.panel-header{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+.panel-body{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="container text-center">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" width="98" height="58"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+			<li><a href="pages/org.html">Organizers</a></li>
+			<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Submissions
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pages/misc.html">Important Dates</a></li>
+          <li><a href="pages/misc.html">Call for Papers</a></li>
+          <li><a href="pages/misc.html">Call for Tutorials</a></li>
+          <li><a href="pages/misc.html">Call for Workshop</a></li>
+        </ul>
+      </li>
+      	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Program
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pages/misc.html">Schedule</a></li>
+          <li><a href="pages/misc.html">Speakers</a></li>
+          <li><a href="pages/misc.html">Tutorials</a></li>
+        </ul>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attend
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pages/misc.html">Registration</a></li>
+          <li><a href="pages/misc.html">Venue</a></li>
+          <li><a href="pages/misc.html">Accomodation</a></li>
+          <li><a href="pages/misc.html">Travel Info</a></li>
+          <li><a href="pages/misc.html">Visa Invitation Letter</a></li>
+        </ul>
+      </li>
+      <li><a href="pages/misc.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<video  autoplay loop muted id="myVideo">
+  <source src="video/video1_noSound_compressed.mp4" type="video/mp4">
+  <!--<source src="video2.webm" type="video/webm">-->
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="titleBlock" id="title">
+  <h1>ICB 2019</h1>
+  <p> The 12<sup>th</sup> IAPR International Conference On Biometrics</p>
+  <p> 2-5 June | Crete, Greece</p>
+   <!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
+</div>								
+				
+
+
+<div class="container">
+	<div class="panel panel-default panel-transparent">
+	   <div class="panel-header  w3-container w3-center w3-animate-bottom">
+		   <p id="intro-bg"><b>The 12th IAPR International Conference on Biometrics</b> (ICB 2019), sponsored by 
+		   IAPR (Technical Committee on Biometrics – TC4, International Association for Pattern Recognition), is the premier forum for the presentation of new advances and 			research results in the fields of biometrics. ICB, formed in 2006 by merging AVBPA (Audio- and Video-based Person Authentication), ICBA (International Conference on Biometric Authentication) and other biometric workshops, has established itself as a leading international conference in biometrics. The conference will have a broad scope and invites papers that advance biometric technologies, sensor design, feature extraction and matching algorithms, analysis of security and privacy, and evaluation of social impact of biometrics technology. Topics of interest include all areas of current Biometrics research and applications. In the year 2019, we are proud to present this event in the Land of Gods - Greece!
+		   </p>
+	   </div>
+  
+	    
+	</div>
+</div>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-pause\"></span>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-play\"></span>";
+  }
+}
+</script>
+</body>
+</html>
