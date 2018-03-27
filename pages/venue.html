@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICB 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+  <style>
+
+/**/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+	//background-image : url("papers4.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	//background-repeat: no-repeat;
+    background-attachment: fixed;
+	height:100%;
+	color: #000099;//#595a5b;
+}
+
+
+
+/**/
+
+.navbar{
+//background-color:transparent; //#f2f2f2; 
+background-color: #ffffff;// #f2f2f2; 
+border-color:transparent;
+color: #000099 !important;//#595a5b !important;
+font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>li>a{
+color: #000099 !important ; //#595a5b !important;
+font-size:18px;
+font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+color: #000099 !important;//#595a5b !important;
+font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #000099 !important;
+    background-color: transparent !important;
+}
+
+.nav>li>a:hover{
+color: #000099 !important ;
+}
+
+/**/
+
+
+@media (max-width: 640px) {
+    #main-container{
+		//padding-top: 50%;
+		}
+}
+
+@media (min-width: 640px) {
+        #main-container{
+		//padding-top: 7%;
+		}
+}
+
+
+.well{
+background-color: transparent;
+border:none;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+
+.panel-header{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+.panel-body{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+	.panel-transparent {
+			background: none;
+		}
+
+	.panel-transparent .panel-header{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		padding-bottoms: 10px;
+
+    }
+	
+    .panel-transparent .panel-body{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		
+    }
+
+
+	.panel-default {
+		border: none;
+		z-index: -1;
+	}
+
+h4{
+font-weight: bold;
+
+}
+
+
+#news
+{
+text-align:left;
+background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+
+
+#news li>h5{
+font-weight: bold;
+}
+
+#regOptions{
+text-align: left;
+width: 100%;
+background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+#regOptions td:hover{
+background-color: red;
+}
+
+/*
+#regOptions tr:nth-child(odd){
+background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+#regOptions tr:nth-child(even){
+background-color: #f2f2f2;
+opacity: 0.8;
+}
+*/
+
+#regOptions td, #regOptions th {
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+#title{
+font-weight: bold;
+text-align: left;
+color:#000099;//#595a5b;
+
+}
+
+#heading{
+font-weight: bold;
+text-align: center;
+color:#000099;//#595a5b;
+text-decoration: underline;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="container text-center">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo" width="98" height="58"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+			<li><a href="org.html">Organizers</a></li>
+			<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Submissions
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="sub.html">Important Dates</a></li>
+          <li><a href="sub.html#divPapers">Call for Papers</a></li>
+          <li><a href="sub.html#divTutorials">Call for Tutorials</a></li>
+          <li><a href="sub.html#divWorkshop">Call for Workshop</a></li>
+        </ul>
+      </li>
+      	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Program
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Tutorials</a></li>
+        </ul>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attend
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="reg.html">Registration</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Accomodation</a></li>
+          <li><a href="#">Travel Info</a></li>
+          <li><a href="#">Visa Invitation Letter</a></li>
+        </ul>
+      </li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" id="main-container">
+	<div class="well" >
+		<h4 id="heading">ICB 2019 Venue</h4>
+
+	<br>
+    <h4 id="title">Conference Location </h4>
+	<p style="text-align:left;">ICB 2019 Conference will be held at <b><a href="http://www.aldemar-resorts.gr/EN/Home/"  target="_blank">Aldemar Knossos Royal, Hersonissos, Crete, Greece.</a></b>
+	</br>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.8170889700195!2d25.38068731450762!3d35.335363356471284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149baad455fb0145%3A0x7400ea5cb89c5d6!2sAldemar+Knossos+Royal+%26+Royal+Villas!5e0!3m2!1sen!2sus!4v1521557192102" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	
+	
+	<div class="panel panel-default panel-transparent  w3-container w3-center w3-animate-bottom"  id="divPapers">
+	   <div class="panel-header">
+		   	<h4 id="title">Getting There</h4>
+	   </div>
+  
+	   <div class="panel-body">
+			<div class="row" >
+					<div class="col-sm-10" id="news">
+					<h4 style="text-align:left;">Airport</h4>
+
+						<ul id="List1">
+						
+						    <li>
+								<p> There are three airports in Crete: Heraklion Airport (or "Kazantzakis" airport - code: HER) 
+								Chania Airport (or "Daskalogiannis" - code: CHQ) and the small Sitia Airport (code: JSH). 
+								All of them are international airports.
+								</p>
+							</li>					
+							<li>
+								<p> <b>Heraklion International Airport, “Nikos Kazantzakis”</b> (IATA: HER, ICAO: LGIR) is the primary airport and it is
+					             approx. 28m from the Conference Venue.
+								</p>
+							</li>
+							
+						 </ul>
+					</div>
+					<div class="col-sm-2">
+					</div>
+         	</div> 
+			<div class="row" >
+					<div class="col-sm-10" id="news">
+					<h4 style="text-align:left;">Airport to Conference Venue(By Taxi)</h4>
+
+						<ul id="List1">
+							<li>
+								<p> Distance: 28Km</p>
+							</li>
+							<li>
+								<p> Time: ~30</p>
+							</li>
+							<li>
+								<p> Price: €30-35</p>
+							</li>
+						 </ul>
+					</div>
+					<div class="col-sm-2">
+					</div>
+         	</div> 
+	    </div> 
+	</div>
+	
+	
+</div>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-pause\"></span>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-play\"></span>";
+  }
+}
+</script>
+</body>
+</html>
