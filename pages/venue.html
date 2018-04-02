@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
   <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">  
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  
@@ -17,6 +16,7 @@
 * {
     box-sizing: border-box;
 }
+
 
 body {
     margin: 0;
@@ -29,75 +29,233 @@ body {
 	//background-repeat: no-repeat;
     background-attachment: fixed;
 	height:100%;
-	color: #000099;//#595a5b;
+	color: #000099 ;//595a5b;
 }
 
 
+#myCarousel {
+    position: fixed;
+	top:0;
+	left:0;
+    min-width: 100%; 
+    height: auto;
+	width:100%;
+	z-index: 1;
+}
+
+.cimage{
+    width: 100%;
+    height: auto;
+  }
+
+
+#myBtn {
+    width: 20px;
+    font-size: 12px;
+    border: none;
+    /*background: #000;*/
+	background:none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+	    border: none;
+
+}
 
 /**/
-
 .navbar{
-//background-color:transparent; //#f2f2f2; 
-background-color: #ffffff;// #f2f2f2; 
+background-color:transparent; //#f2f2f2; 
 border-color:transparent;
-color: #000099 !important;//#595a5b !important;
+color: #f1f1f1 !important;//#595a5b !important;
 font-weight: bold;
 }
 
 
 .navbar-default .navbar-nav>li>a{
-color: #000099 !important ; //#595a5b !important;
+color: #f1f1f1 !important ; //#595a5b !important;
 font-size:18px;
 font-weight: bold;
 }
 
 .navbar-default .navbar-brand {
-color: #000099 !important;//#595a5b !important;
+color: #f1f1f1 !important;//#595a5b !important;
 font-weight: bold;
 }
-
-.navbar-brand:hover {
-    color: #000099 !important;
-    background-color: transparent !important;
-}
-
-.nav>li>a:hover{
-color: #000099 !important ;
-}
-
 /**/
 
 
-@media (max-width: 640px) {
-    #main-container{
-		//padding-top: 50%;
+/**/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+	#myVideo { top:0;}
+	.container{
+		padding-top: 24%;
+		    z-index: -1;
 		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 2%;
+    right: 30%;
+    left:25%;
+    width:50%;
+    color: #f1f1f1;
+    z-index: 1;	
+}
+	#title>h1{
+	font-size:26px;
+	color:#f1f1f1 !important;
+	font-weight: bold;
+	}
+
+	#title>p{
+	font-size:14px;
+	color:#f1f1f1 !important;
+
+	}
+	
+	#confName{
+	display:none;
+	}
 }
 
-@media (min-width: 640px) {
-        #main-container{
-		//padding-top: 7%;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {background: green;}
+	#myVideo { top:0;}
+	.container{
+		padding-top: 17%;
+		    z-index: -1;
 		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 2%;
+    right: 30%;
+    left:25%;
+    width:50%;
+    color: #f1f1f1;
+    z-index: 1;	
+}
+	#title>h1{
+	font-size:30px;
+	color:#f1f1f1 !important;
+	font-weight: bold;
+	}
+
+	#title>p{
+	font-size:16px;
+	color:#f1f1f1 !important;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {background: blue;}
+	#myVideo { top:0;}
+	.container{
+		padding-top: 17%;
+		    z-index: -1;
+		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 7%;
+    right: 30%;
+    left:25%;
+    width:50%;
+    color: #f1f1f1;
+    z-index: 1;	
+}
+	#title>h1{
+	font-size:44px;
+	color:#f1f1f1 !important;
+	font-weight: bold;
+	}
+
+	#title>p{
+	font-size:18px;
+	color:#f1f1f1 !important;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+	#myVideo { top:0;}
+	.container{
+		padding-top: 17%;
+		z-index: -1;
+		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 7%;
+    right: 30%;
+    left:25%;
+    width:50%;
+    color: #f1f1f1;
+    z-index: 1;
+}
+
+	#title>h1{
+	font-size:48px;
+	color:#f1f1f1 !important;
+	font-weight: bold;
+	}
+
+	#title>p{
+	font-size:22px;
+	color:#f1f1f1 !important;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+	#myVideo { top:0;}
+    .container{
+		padding-top: 16%;
+		    z-index: -1;
+		}
+    .titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    top: 9%;
+    right: 30%;
+    left:25%;
+    width:50%;
+    color: #f1f1f1;
+    z-index: 1;	
+}
+	#title>h1{
+	font-size:48px;
+	color:#f1f1f1 !important;
+	font-weight: bold;
+	}
+
+	#title>p{
+	font-size:22px;
+	color:#f1f1f1 !important;
+	}
 }
 
 
-.well{
-background-color: transparent;
-border:none;
-padding-top:0px;
-padding-bottom:0px;
+#intro-bg{
+//background-color: #d9d9d9;
+//background-color: #f2f2f2;
+//opacity: 0.8;
+color:#000099 ; //#595a5b;
+text-align:justify;
 
 }
 
-.panel-header{
-padding-bottom:0px;
-padding-top:0px;
-}
-
-.panel-body{
-padding-bottom:0px;
-padding-top:0px;
-}
 
 	.panel-transparent {
 			background: none;
@@ -124,8 +282,30 @@ padding-top:0px;
 		z-index: -1;
 	}
 
+.panel-header{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+.panel-body{
+padding-bottom:0px;
+padding-top:0px;
+}
+
+
+.well{
+background-color: transparent;
+border:none;
+padding-top:0px;
+padding-bottom:0px;
+
+}
+
+
+/**/
 h4{
 font-weight: bold;
+color:#000099;
 
 }
 
@@ -133,7 +313,7 @@ font-weight: bold;
 #news
 {
 text-align:left;
-background-color: #f2f2f2;
+background-color: transparent; //#f2f2f2;
 opacity: 0.8;
 }
 
@@ -171,7 +351,7 @@ opacity: 0.8;
     padding: 8px;
 }
 
-#title{
+#title1{
 font-weight: bold;
 text-align: left;
 color:#000099;//#595a5b;
@@ -184,6 +364,8 @@ text-align: center;
 color:#000099;//#595a5b;
 text-decoration: underline;
 }
+
+/**/
 
 </style>
 
@@ -231,7 +413,7 @@ text-decoration: underline;
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="misc.html">Registration</a></li>
-          <li><a href="venue.html">Venue</a></li>
+          <li><a href="#">Venue</a></li>
           <li><a href="misc.html">Accomodation</a></li>
           <li><a href="misc.html">Travel Info</a></li>
           <li><a href="misc.html">Visa Invitation Letter</a></li>
@@ -241,14 +423,59 @@ text-decoration: underline;
       </ul>
     </div>
   </div>
-</nav>
+</nav> 
 
-<div class="container" id="main-container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators" style="display:none;">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img class="cimage" src="../images/c_1.jpg">
+						</div>
+
+						<div class="item">
+							<img class="cimage" src="../images/c_2.jpeg">
+						</div>
+
+						<div class="item">
+							<img class="cimage" src="../images/c_3.jpg">
+						</div>
+						<div class="item">
+							<img class="cimage" src="../images/c_4.jpeg">
+						</div>
+					</div>
+
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" style="display:none;"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" style="display:none;"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>	
+
+<div class="titleBlock text-center" id="title">
+  <h1>ICB 2019</h1>
+  <p id="confName"> The 12<sup>th</sup> IAPR International Conference On Biometrics</p>
+  <p> 2-5 June | Crete, Greece</p>
+   <!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
+</div>								
+				
+
+
+<div class="container">
 	<div class="well" >
-		<h4 id="heading">ICB 2019 Venue</h4>
 
-	<br>
-    <h4 id="title">Conference Location </h4>
+    <h4 id="title1">Conference Location </h4>
 	<p style="text-align:left;">ICB 2019 Conference will be held at <b><a href="http://www.aldemar-resorts.gr/EN/Home/"  target="_blank">Aldemar Knossos Royal, Hersonissos, Crete, Greece.</a></b>
 	</br>
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.8170889700195!2d25.38068731450762!3d35.335363356471284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149baad455fb0145%3A0x7400ea5cb89c5d6!2sAldemar+Knossos+Royal+%26+Royal+Villas!5e0!3m2!1sen!2sus!4v1521557192102" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -257,7 +484,7 @@ text-decoration: underline;
 	
 	<div class="panel panel-default panel-transparent  w3-container w3-center w3-animate-bottom"  id="divPapers">
 	   <div class="panel-header">
-		   	<h4 id="title">Getting There</h4>
+		   	<h4 id="title1">Getting There</h4>
 	   </div>
   
 	   <div class="panel-body">
@@ -309,21 +536,5 @@ text-decoration: underline;
 	
 </div>
 
-
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "<span class=\"glyphicon glyphicon-pause\"></span>";
-  } else {
-    video.pause();
-    btn.innerHTML = "<span class=\"glyphicon glyphicon-play\"></span>";
-  }
-}
-</script>
 </body>
 </html>
