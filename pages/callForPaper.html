@@ -367,18 +367,18 @@ opacity: 0.8;
     padding: 8px;
 }
 
+#title1{
+font-weight: bold;
+text-align: left;
+color:#000099;//#595a5b;
 
+}
 
 #heading{
 font-weight: bold;
 text-align: center;
 color:#000099;//#595a5b;
 text-decoration: underline;
-}
-
-#divOrg{
-border: none;
-background-color: transparent;
 }
 
 /**/
@@ -403,14 +403,14 @@ background-color: transparent;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
-          <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
 			<li><a href="org.html">Organizers</a></li>
 			<li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Submissions
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="misc.html">Important Dates</a></li>
-          <li><a href="callForPaper.html">Call for Papers</a></li>
+          <li><a href="#">Call for Papers</a></li>
           <li><a href="misc.html">Call for Tutorials</a></li>
           <li><a href="misc.html">Call for Workshop</a></li>
         </ul>
@@ -485,17 +485,61 @@ background-color: transparent;
   <p> 2-5 June | Crete, Greece</p>
    <!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
 </div>								
+				
 
-<div class="container" id="main-container">
-<div class="well" >
-	<h4 id="heading" class="w3-container w3-center w3-animate-zoom">To Be Announced....</h4>
+
+<div class="container">
+	<div class="well" >
+
+	<div class="panel panel-default panel-transparent  w3-container w3-center w3-animate-bottom"  id="divPapers">
+	   <div class="panel-header">
+		   	<h4 id="title1">Call For Papers</h4>
+	   </div>
+  
+	   <div class="panel-body">
+			<div class="row" >
+					<div class="col-sm-10" id="news">	
+					<p style="text-align:left;">The 12th IAPR International Conference on Biometrics (ICB 2019) is the premier forum for the presentation of new advances and research results in the fields of biometrics. 
+					In the year 2019, we are proud to present this event in one of the most beautiful places in Greece.
+					</p>
+                    <p style="text-align:left;"> ICB 2019 is intended to have a broad scope. Topics of interest include, but are not limited to: 
+					</p>
+						<ul id="List1">
+						
+						    <li>
+								<p><b>Biometric Technologies:</b>
+								face, fingerprint, DNA, ear, hand, handwriting, gait, gesture, iris, ocular, handprint/footprint, vascular, 
+								voice, other modalities, multimodalities, soft biometrics, and novel sensing technologies.
+								</p>
+							</li>					
+							<li>
+								<p> <b>Biometric System Designs & Standards:</b> 
+								anti-spoofing, cancelable template and protection, encryption, large-scale identification and big data, mobile and remote biometrics, 
+								security and privacy, smart card, standardization, template selection and update.
+								</p>
+							</li>
+							<li>
+								<p> <b>Biometric Applications:</b> 
+								border and access control, civil registry, e-payment, forensics, law enforcement, health care, mobile and internet, social networking.
+								</p>
+							</li>
+							<li>
+								<p> <b>Biometric Evaluations:</b> 
+								aging effects, confidence interval estimation, databases, environment impacts, performance modeling and prediction, protocol and benchmarking, 
+								social impacts, and usability studies.
+								</p>
+							</li>
+						 </ul>
+					</div>
+					<div class="col-sm-2">
+					</div>
+         	</div> 
+			 
+	    </div> 
+	</div>
+	
+	
 </div>
-
-
-</div>
-
-
-
 
 </body>
 </html>
