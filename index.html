@@ -29,7 +29,7 @@ body {
 	//background-repeat: no-repeat;
     background-attachment: fixed;
 	height:100%;
-	color: #595a5b;
+	color: #000099 ; //#595a5b;
 }
 
 
@@ -128,7 +128,9 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
+	background:rgba(0,0,0,.5);
+	
 }
 	#title>h1{
 	font-size:26px;
@@ -163,7 +165,8 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
+	background:rgba(0,0,0,.5);
 }
 	#title>h1{
 	font-size:30px;
@@ -193,7 +196,9 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
+	background:rgba(0,0,0,.5);
+	
 }
 	#title>h1{
 	font-size:44px;
@@ -224,6 +229,8 @@ color: #000099 !important;
     width:50%;
     color: #f1f1f1;
     z-index: 1;
+	background:rgba(0,0,0,.5);
+
 }
 
 	#title>h1{
@@ -254,7 +261,9 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
+	background:rgba(0,0,0,.5);
+	
 }
 	#title>h1{
 	font-size:48px;
@@ -307,7 +316,7 @@ text-align:justify;
 
 h4{
 font-weight: bold;
-color:#595a5b;
+color:#000099 ; //#595a5b;
 
 }
 
@@ -315,7 +324,7 @@ color:#595a5b;
 height: 280px;
 overflow-y:auto;
 background-color: transparent;
-color:#595a5b;
+color:#000099 ;//#595a5b;
 }
 
 #newsBlock{
@@ -347,19 +356,19 @@ opacity: 0.8;
 }
 
 #impDates tr:hover {
-background-color: #d9d9d9;
+background-color: #b2b2e0 ; //#d9d9d9;
 color:black;
 }
 
 
 #impDates td, #impDates th {
-    border: 1px solid #d9d9d9;
+    border: 1px solid #000099 ; //#d9d9d9;
     padding: 8px;
 }
 
 #impDates th{
     //background-color: #4CAF50;
-    color:#595a5b;
+    color:#000099 ;//#595a5b;
 }
 
 
@@ -489,13 +498,54 @@ padding-top:0px;
 <div class="container">
 
 	<div class="panel panel-default panel-transparent">
-	   <div class="panel-header  w3-container w3-center w3-animate-bottom">
+	    <div class="panel-header  w3-container w3-center w3-animate-bottom">
 		   <p id="intro-bg"><b>The 12th IAPR International Conference on Biometrics</b> (ICB 2019), sponsored by 
 		   IAPR (Technical Committee on Biometrics – TC4, International Association for Pattern Recognition), is the premier forum for the presentation of new advances and 			research results in the fields of biometrics. ICB, formed in 2006 by merging AVBPA (Audio- and Video-based Person Authentication), ICBA (International Conference on Biometric Authentication) and other biometric workshops, has established itself as a leading international conference in biometrics. The conference will have a broad scope and invites papers that advance biometric technologies, sensor design, feature extraction and matching algorithms, analysis of security and privacy, and evaluation of social impact of biometrics technology. Topics of interest include all areas of current Biometrics research and applications. In the year 2019, we are proud to present this event in the Land of Gods - Greece!
 		   </p>
-	   </div>
-  
-	    
+	    </div>
+        <div class="panel-body">
+			<div class="row">
+					  <div class="col-sm-6  w3-container w3-center w3-animate-bottom"  id="datesBlock">
+						    <h4>Key Dates</h4>
+							<div class="table-responsive">
+							<table id="impDates">
+								<tr>
+									<td>To Be Announced</td>
+									<td>Paper Submission</td>
+								</tr>
+								<tr>
+									<td>To Be Announced</td>
+									<td>Tutorial Proposals</td>
+								</tr>								
+								<tr>
+									<td>To Be Announced</td>
+									<td>Decision to Authors</td>
+								</tr>
+								<tr>
+									<td>To Be Announced</td>
+									<td>Camera Ready</td>
+								</tr>
+								<tr>
+									<td>To Be Announced</td>
+									<td>Conference Starts</td>
+								</tr>
+							</table>
+							</div>
+					  </div>
+					  
+					  <div class="col-sm-6 w3-container w3-center w3-animate-bottom"  id="newsBlock">
+						 <h4>Latest Updates</h4>	
+									 
+						 <ul id="newsList">
+							<li>
+								<h6>Website Launched.</h6>
+								<p> Please check other important dates</p>
+							</li>
+															  	  				  	 				  	 
+						 </ul>
+					  </div>
+			  </div> 
+	    </div>	   
 	</div>
 </div>
 
