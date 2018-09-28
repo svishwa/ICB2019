@@ -159,7 +159,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
 	background:rgba(0,0,0,.5);
 	
 }
@@ -283,6 +283,7 @@ text-align:justify;
 }
 
 
+
 	.panel-transparent {
 			background: none;
 		}
@@ -299,13 +300,14 @@ text-align:justify;
 	    z-index: -1;
         background: none !important;
 		padding-top: 10px;
-		
+
     }
 
 
 	.panel-default {
 		border: none;
 		z-index: -1;
+		box-shadow: none;
 	}
 
 .panel-header{
@@ -382,7 +384,12 @@ opacity: 0.8;
     padding: 8px;
 }
 
+#title1{
+font-weight: bold;
+text-align: left;
+color:#000099;//#595a5b;
 
+}
 
 #heading{
 font-weight: bold;
@@ -391,17 +398,52 @@ color:#000099;//#595a5b;
 text-decoration: underline;
 }
 
-#divOrg{
-border: none;
-background-color: transparent;
-}
-
 /**/
 a {
-
     color: rgb(153, 0, 0);
 
 }
+
+#datesBlock{
+height: 280px;
+//overflow-y:auto;
+background-color: transparent;
+color:#000099 ;//#595a5b;
+}
+
+#impDates{
+text-align: left;
+width: 100%;
+//background-color: #f2f2f2;
+opacity: 0.8;
+}
+
+#impDates tr:nth-child(odd){
+//background-color: #f2f2f2;
+}
+
+#impDates tr:hover {
+background-color: #b2b2e0 ; //#d9d9d9;
+color:black;
+}
+
+
+#impDates td, #impDates th {
+    //border: 1px solid #000099 ; //#d9d9d9;
+    border : transparent;
+    padding: 8px;
+    text-align:center;
+}
+
+#impDates th{
+    //background-color: #4CAF50;
+    color:#000099 ;//#595a5b;
+}
+
+#impDates td{
+	width:25%;
+}
+
 </style>
 
 </head>
@@ -422,7 +464,7 @@ a {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
-          <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="org.html">Organizers</a></li>
 			<li class="dropdown">
@@ -430,7 +472,7 @@ a {
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="impDates.html">Important Dates</a></li>
-          <li><a href="callForPaper.html">Call for Papers</a></li>
+          <li><a href="#">Call for Papers</a></li>
           <li><a href="callForTutorials.html">Call for Tutorials</a></li>
           <li><a href="callForCompetitions.html">Call for Competitions</a></li>
           <li><a href="paperSub.html">Paper Submission</a></li>
@@ -506,17 +548,106 @@ a {
   <p> 4-7 June | Crete, Greece</p>
    <!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
 </div>								
+				
 
-<div class="container" id="main-container">
-<div class="well" >
-	<h4 id="heading" class="w3-container w3-center w3-animate-zoom">To Be Announced....</h4>
+
+<div class="container">
+
+	<div class="panel panel-transparent  w3-container w3-center w3-animate-bottom">
+	   <div class="panel-header">
+		   <h4 id="heading">Important Dates</h4>
+	   </div>
+  
+	           <div class="panel-body">
+			<div class="row">
+					  <div class="col-sm-12  w3-container w3-center w3-animate-bottom"  id="datesBlock">
+						    <h4>Conference paper submission	</h4>
+							<div class="table-responsive">
+							<table id="impDates">
+								<tr>
+									<td></td>
+									<td>Submission deadline</td>
+									<td>December 15th, 2018</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Acceptance notification</td>
+									<td>February 28th, 2019</td>
+									<td></td>
+								</tr>								
+								<tr>
+									<td></td>
+									<td>Camera ready papers</td>
+									<td>March 20th, 2019</td>
+									<td></td>
+								</tr>
+															
+							</table>
+							</div>
+
+							<h4>Tutorial Proposal	</h4>
+							<div class="table-responsive">
+							<table id="impDates">
+								<tr>
+									<td></td>
+									<td>Submission deadline</td>
+									<td>March 20th, 2019</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Acceptance notification</td>
+									<td>April 15th, 2019</td>
+									<td></td>
+								</tr>								
+								<tr>
+									<td></td>
+									<td>Tutorial date</td>
+									<td>June 4th, 2019</td>
+									<td></td>
+								</tr>
+								
+							</table>
+							</div>
+
+							<h4>Competition Proposal	</h4>
+							<div class="table-responsive">
+							<table id="impDates">
+								<tr>
+									<td></td>
+									<td>Submission deadline</td>
+									<td>October 19, 2018</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Decisions to organizers</td>
+									<td>October 26, 2018</td>
+									<td></td>
+								</tr>								
+								<tr>
+									<td></td>
+									<td>Submission of summary papers</td>
+									<td>February 11, 2019</td>
+									<td></td>
+								</tr>
+								
+							</table>
+							</div>
+					  </div>
+					  					  
+			  </div> 
+	    </div> 
+	</div>
+	
+	
+
+<div class="container">
+	<div class="well">
+	</div>
+
 </div>
-
-
-</div>
-
-
-
 
 </body>
 </html>
