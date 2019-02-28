@@ -86,6 +86,7 @@ color: #f1f1f1 !important;//#595a5b !important;
 font-weight: bold;
 }
 
+
 .dropdown-menu{
 background-color:#f1f1f1;
 }
@@ -191,7 +192,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;	
+    z-index: 1;
 	background:rgba(0,0,0,.5);
 	
 }
@@ -225,7 +226,7 @@ color: #000099 !important;
     color: #f1f1f1;
     z-index: 1;
 	background:rgba(0,0,0,.5);
-	
+
 }
 
 	#title>h1{
@@ -256,7 +257,7 @@ color: #000099 !important;
     left:25%;
     width:50%;
     color: #f1f1f1;
-    z-index: 1;
+    z-index: 1;	
 	background:rgba(0,0,0,.5);
 	
 }
@@ -283,7 +284,6 @@ text-align:justify;
 }
 
 
-
 	.panel-transparent {
 			background: none;
 		}
@@ -300,14 +300,13 @@ text-align:justify;
 	    z-index: -1;
         background: none !important;
 		padding-top: 10px;
-
+		
     }
 
 
 	.panel-default {
 		border: none;
 		z-index: -1;
-		box-shadow: none;
 	}
 
 .panel-header{
@@ -400,50 +399,10 @@ text-decoration: underline;
 
 /**/
 a {
+
     color: rgb(153, 0, 0);
 
 }
-
-#datesBlock{
-height: 280px;
-//overflow-y:auto;
-background-color: transparent;
-color:#000099 ;//#595a5b;
-}
-
-#impDates{
-text-align: left;
-width: 100%;
-//background-color: #f2f2f2;
-opacity: 0.8;
-}
-
-#impDates tr:nth-child(odd){
-//background-color: #f2f2f2;
-}
-
-#impDates tr:hover {
-background-color: #b2b2e0 ; //#d9d9d9;
-color:black;
-}
-
-
-#impDates td, #impDates th {
-    //border: 1px solid #000099 ; //#d9d9d9;
-    border : transparent;
-    padding: 8px;
-    text-align:center;
-}
-
-#impDates th{
-    //background-color: #4CAF50;
-    color:#000099 ;//#595a5b;
-}
-
-#impDates td{
-	width:25%;
-}
-
 </style>
 
 </head>
@@ -471,11 +430,11 @@ color:black;
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Submissions
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Important Dates</a></li>
+          <li><a href="impDates.html">Important Dates</a></li>
           <li><a href="callForPaper.html">Call for Papers</a></li>
           <li><a href="callForTutorials.html">Call for Tutorials</a></li>
           <li><a href="callForCompetitions.html">Competitions</a></li>
-          <li><a href="callForSpecialSessions.html">Special Sessions</a></li>       
+          <li><a href="callForSpecialSessions.html">Special Sessions</a></li>
           <li><a href="paperSub.html">Paper Submission</a></li>
         </ul>
       </li>
@@ -553,129 +512,39 @@ color:black;
 
 
 <div class="container">
-
-	<div class="panel panel-transparent  w3-container w3-center w3-animate-bottom">
+	
+	
+	<div class="panel panel-default panel-transparent  w3-container w3-center w3-animate-bottom"  id="divPapers">
 	   <div class="panel-header">
-		   <h4 id="heading">Important Dates</h4>
+		   	<h4 id="title1">Accomodation</h4>
 	   </div>
   
-	           <div class="panel-body">
-			<div class="row">
-					  <div class="col-sm-12  w3-container w3-center w3-animate-bottom"  id="datesBlock">
-						    <h4>Conference paper submission	</h4>
-							<div class="table-responsive">
-							<table id="impDates">
-								<tr>
-									<td></td>
-									<td>Submission deadline</td>
-									<td><strike>December 15th, 2018</strike> <br/>January 3rd, 2019 (11:59 PM PST) <br/> No further extensions will be provided.</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Acceptance notification</td>
-									<td>February 28th, 2019</td>
-									<td></td>
-								</tr>								
-								<tr>
-									<td></td>
-									<td>Camera ready papers</td>
-									<td>March 20th, 2019</td>
-									<td></td>
-								</tr>
-															
-							</table>
-							</div>
+	   <div class="panel-body">
+			<div class="row" >
+					<div class="col-sm-10" id="news">
+						<p style="text-align:left;">ICB 2019 Conference will be held at <b><a href="http://www.aldemar-resorts.gr/EN/Home/"  target="_blank">Aldemar Knossos Royal, Hersonissos, Crete, Greece.</a></b> The conference has negotiated discounted rates at the below hotels. Please use the links for booking. </p>
 
-							<h4>Tutorial Proposal	</h4>
-							<div class="table-responsive">
-							<table id="impDates">
-								<tr>
-									<td></td>
-									<td>Submission deadline</td>
-									<td>March 20th, 2019</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Acceptance notification</td>
-									<td>April 15th, 2019</td>
-									<td></td>
-								</tr>								
-								<tr>
-									<td></td>
-									<td>Tutorial date</td>
-									<td>June 4th, 2019</td>
-									<td></td>
-								</tr>
+						<ul id="List1">
+						
+						    <li>
+								 Aldemar Knossos Royal: <a href="https://aldemarknossosroyal.reserve-online.net/?bkcode=IAPR2019&checkin=2019-06-03&nights=3" target="_blank"> Book here. </a>
 								
-							</table>
-							</div>
-
-							<h4>Competition Proposal	</h4>
-							<div class="table-responsive">
-							<table id="impDates">
-								<tr>
-									<td></td>
-									<td>Submission deadline</td>
-									<td>October 19, 2018</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Decisions to organizers</td>
-									<td>October 26, 2018</td>
-									<td></td>
-								</tr>	
-								<tr>
-									<td></td>
-									<td>Submission of initial competition paper</td>
-									<td>January 3, 2019</td>
-									<td></td>
-								</tr>	
-								<tr>
-									<td></td>
-									<td>Submission of summary papers</td>
-									<td>February 11, 2019</td>
-									<td></td>
-								</tr>								
-								<tr>
-									<td></td>
-									<td>Submission of final competition paper with results</td>
-									<td>March 13, 2019</td>
-									<td></td>
-								</tr>
-							</table>
-							<h4>Special Session Proposal	</h4>
-							<div class="table-responsive">
-							<table id="impDates">
-								<tr>
-									<td></td>
-									<td>Submission deadline</td>
-									<td>November 10, 2018</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>Acceptance notification</td>
-									<td>November 15, 2018</td>
-									<td></td>
-								</tr>								
-																
-							</table>
-							</div>
-					  </div>
-					  					  
-			  </div> 
+							</li>					
+							
+							<li>
+								 Aldemar Royal Mare: <a href="https://royalmareluxuryresort.reserve-online.net/?bkcode=IAPR2019&checkin=2019-06-03&nights=3" target="_blank"> Book here. </a>
+								
+							</li>
+						 </ul>
+					</div>
+					<div class="col-sm-2">
+					</div>
+         	</div> 
+			
 	    </div> 
 	</div>
 	
 	
-
-<div class="container">
-	<div class="well">
-	</div>
-
 </div>
 
 </body>
