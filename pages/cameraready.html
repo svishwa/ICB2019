@@ -526,34 +526,99 @@ a {
 			<div class="row" >
 					<div class="col-sm-10" id="news">
 						<h6><b>1. Add cpoyright notice to your paper</b> </h6>
+						<p align="justify">
+								Add the appropriate copyright notice to the bottom of the first page of your source document.
+							</p>
+						<p align="justify">
+						<ul id="List1">
+						 
+
+							<li>
 							<p align="justify">
-								Add the copyright notice to the bottom of the first page of your source document.
+								For papers in which all authors are employed by the US government, the copyright notice is:
 							</p>
 							<p align="justify">
-								For papers in which all authors are employed by the US government, the copyright notice is: U.S. Government work not protected by U.S. copyright
+								 U.S. Government work not protected by U.S. copyright
 							</p>
+							</li>
+
+							<li>
 							<p align="justify">
 								For papers in which all authors are employed by a Crown government (UK, Canada, and Australia), the copyright notice is: 
 							</p>
-							
+							 
 							<p	align="justify">
 								978-1-7281-3640-0/19/$31.00 ©2019 Crown
 							</p>
+							</li>
+
+							<li>
 							<p align="justify">
 								For papers in which all authors are employed by the European Union, the copyright notice is: 
 							</p>
+							 
 							<p align="justify">
 								978-1-7281-3640-0/19/$31.00 ©2019 European Union
 							</p>
+							</li>
+
+							<li>
 							<p align="justify">
 								For all other papers the copyright notice is: 
 							</p>
+							 
 							<p align="justify">
 								978-1-7281-3640-0/19/$31.00 ©2019 IEEE
 							</p>
-							<p align="justify">
+							</li>
+
+							 
+							
+							
+
+						</ul>
+						</p>
+
+						<p align="justify">
 								Proofread your source document thoroughly to confirm that it will require no revision.
-							</p>
+						</p>
+						<p align="justify">
+								You may follow these instructions to add the copyright notice in your latex file:
+								<ul id="List1">
+								<li>
+									<p align="justify">
+									Include the following package:
+									<br>\usepackage[norule,symbol,perpage]{footmisc}
+									</p>
+								</li>
+								<li>
+								<p align="justify">
+									Add the following commands before \begin{document}:
+									<br>\makeatletter
+									<br>\def\ps@IEEEtitlepagestyle{
+									<br>\def\@oddfoot{\mycopyrightnotice}
+									<br>\def\@evenfoot{}
+									<br>}
+									<br>\def\mycopyrightnotice{
+									<br>{\hfill \footnotesize 978-1-7281-3640-0/19/\$31.00 \copyright 2019 IEEE\hfill}
+									<br>}
+									<br>\makeatother 
+									<br>
+									<br> Please ensure that you use the appropriate copyright notice. 
+								</p>
+								</li>
+								<li>
+									<p align="justify">
+									Include the following statement just after the abstract:
+									<br>\let\thefootnote\relax\footnotetext{\mycopyrightnotice}
+
+									<br> Please ensure that the copyright notice appears at the bottom in the first column.
+									</p>
+								</li>
+							</ul>
+
+						</p>
+
 						<h6><b>2. Validate your paper using PDF eXpress</b> </h6>	
 							
 							<p align="justify">
